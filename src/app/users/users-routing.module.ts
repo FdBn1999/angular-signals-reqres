@@ -8,12 +8,12 @@ const routes: Routes = [
     children: [
       { path: 'list', component: UsersPageComponent },
       { path: '**', redirectTo: 'list' },
-    ]
-  }
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class UsersRoutingModule { }
+export class UsersRoutingModule {}
